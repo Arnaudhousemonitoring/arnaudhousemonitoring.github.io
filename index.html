@@ -7,3 +7,52 @@
   Control your house
   </body>
 </html>
+<html style="height: 100%;">
+<head>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
+<style type="text/css">
+ body { background-color: white; }
+</style>
+ 
+ 
+ <script type="text/javascript">
+ function alarmOn(){
+ $.post('https://api.thingspeak.com/talkbacks/26630/commands.json?apikey=II57E1EKTV3BDEUN&command_string=ALARM_ON&position=1');
+ }
+   function alarmOff(){
+ $.post('https://api.thingspeak.com/talkbacks/26630/commands.json?apikey=II57E1EKTV3BDEUN&command_string=ALARM_OFF&position=2');
+ }
+ 
+</script>
+ 
+</head>
+<body>
+<button onclick="alarmOn()">ALARM_ON</button>
+  <button onclick="alarmOff()">ALARM_OFF</button>
+</body>
+</html>
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
+<style type="text/css">
+ body { background-color: white; }
+</style>
+ 
+ 
+ <script type="text/javascript">
+ function buzzerOff(){
+ $.post('https://api.thingspeak.com/talkbacks/26644/commands.json?apikey=JW9IR1347QSCVC3S&command_string=BUZZER_OFF&position=1');
+ }
+   
+ 
+</script>
+ 
+</head>
+<body>
+<button onclick="buzzerOff()">BUZZER_OFF</button>
+  
+</body>
+</html>
