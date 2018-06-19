@@ -4,11 +4,9 @@
     <title>House monitoring</title>
   </head>
   <body>
-  Control your house
-  </body>
-</html>
-<html style="height: 100%;">
-<head>
+  <h1>Control your house</h1>
+  <html style="height: 100%;">
+<h1><head>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
  
 <style type="text/css">
@@ -31,8 +29,9 @@
 <button onclick="alarmOn()">ALARM_ON</button>
   <button onclick="alarmOff()">ALARM_OFF</button>
 </body>
-</html>
+</html> </h1>
 <!DOCTYPE html>
+<h1>
 <html style="height: 100%;">
 <head>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -46,14 +45,24 @@
  function buzzerOff(){
  $.post('https://api.thingspeak.com/talkbacks/26644/commands.json?apikey=JW9IR1347QSCVC3S&command_string=BUZZER_OFF&position=1');
  }
-   
  
-</script>
+ </script>
  
 </head>
 <body>
 <button onclick="buzzerOff()">BUZZER_OFF</button>
-  
-</body>
-</html>
+</h1>
+
+<h1>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=alarmstate&type=line"></iframe>
 <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=buzzerstate&type=line"></iframe>
+</h1>
+
+<h1>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=temperature&type=line"></iframe>
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=humidity&type=line"></iframe>
+
+</h1>   
+  
+  </body>
+</html>
