@@ -1,90 +1,16 @@
-<!DOCTYPE html>
+
 <html>
-<head>
-<title>House monitoring</title>
-</head>
 
-<body>
-
-<h1>
-
-<HTML> <BODY> <SPAN style="position: absolute; top: 30 px; left: 710px;"> <IMG SRC="https://signspecialist.com/decals/beevault/images/Houses%20Homes%20Buildings%20053-0215.gif" alt="Flowers in Chania" width="250" height="200"> </SPAN> <SPAN style="position: absolute; top: 50 px; left: 100 px;">  </SPAN> </BODY> </HTML>
-
-<h style="font-size:60px;color:Indigo;" >Control your house</h>
-
-
-
-
-<h2>
-
-<head>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
- 
-<style type="text/css">
- body { background-color: white; }
-</style>
- 
- 
- <script type="text/javascript">
- function alarmOn(){
- $.post('https://api.thingspeak.com/talkbacks/26630/commands.json?apikey=II57E1EKTV3BDEUN&command_string=ALARM_ON&position=1');
- }
-   function alarmOff(){
- $.post('https://api.thingspeak.com/talkbacks/26630/commands.json?apikey=II57E1EKTV3BDEUN&command_string=ALARM_OFF&position=2');
- }
- 
-</script>
-
-</head>
-<body >
-<button style="font-size:30px;" onclick="alarmOn()">ALARM_ON</button>
-  <button style="font-size:30px;" onclick="alarmOff()">ALARM_OFF</button>
-</body>
-</html> </h2>
-<!DOCTYPE html>
-<h3>
-<html style="height: 100%;">
-<head>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
- 
-<style type="text/css">
- body { background-color: white; }
-</style>
- 
- 
- <script type="text/javascript">
- function buzzerOff(){
- $.post('https://api.thingspeak.com/talkbacks/26644/commands.json?apikey=JW9IR1347QSCVC3S&command_string=BUZZER_OFF&position=1');
- }
- 
- </script>
- 
-</head>
-<body>
-<button style="font-size:30px;" onclick="buzzerOff()">BUZZER_OFF</button>
-</h3>
-
-
-
-
-</h1>
-
-<p>
-
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=AlarmState&type=line"></iframe>
-
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=BuzzerState&type=line"></iframe>
-
-</p>
-
-<p >
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line"></iframe>
-
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/520825/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidity&type=line"></iframe>
-
-
-</p>   
-
-
-</body>
-</html>
+	<ul>
+	<li><a>home</a></li>
+	<li><a>equipment</a></li>
+	<li><a>how to do</a>
+    		<ul>
+            <li><a>arduinocode</a></li>
+            <li><a>thingspeak</a></li>
+            <li><a>websitecode</a></li>
+            </ul>
+    </li>        
+    <li><a>Product informations</a></li>
+    </ul>
+<html>
