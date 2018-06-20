@@ -1,9 +1,12 @@
 body {
 	font-family: Arial;
-	color: black;
+	color: blue;
 }
 ul {
 	margin: 0px;
     padding: 0px;
     list-style: none;
-    }
+}
+
+
+
